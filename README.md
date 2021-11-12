@@ -44,4 +44,4 @@
 
 <img width="1792" alt="Screen Shot 2021-11-08 at 4 10 47 PM" src="https://user-images.githubusercontent.com/65073138/140838056-d52db822-8f62-4743-be39-132d4485b9c7.png">
 
-<img width="1792" alt="Screen Shot 2021-11-08 at 10 38 11 PM" src="https://user-images.githubusercontent.com/65073138/140874661-8e6629af-62cd-4e71-94e1-d8c5b37214bc.png">
+
