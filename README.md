@@ -35,7 +35,7 @@
 - THEN I am again presented with the poster, plot and ratings of that certain movie.
 
 ### Deployed application link
-  https://alma-dev914.github.io/Front-End-Interactive-User-Interface-/
+  https://raf203.github.io/blase-blase/
 
 
 #### Snaphot of the application
