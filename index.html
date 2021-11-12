@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fonts and icons-->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!--application title-->
+    <title>Group-5-Creation</title>
+</head>
+    <body>
+    <header class="hero"></header>
+    <!--header title-->
+    <h1 class="title">Stories-on-the-go!</h1>
+        <!--hero card left-->
+    <main class="flex-row justify-space-between">
+        <div class="col-lg-4 col-md-8 poster-article ">
+            <form>
+                <!--search bar-->
+            <input list="list-item" type="text" name="movies" onfocus="this.value=''" id= "movie-title" placeholder="Search here">
+            <button type="submit" id="searchbutton" data-toggle="modal" data-target="#myModal"><i class="fas fa-search"></i></button>
+            </form>
+            <datalist id="list-item">
+               <option value="Avengers"></option> 
+               <option value="Alice in Wonderland"></option>
+               <option value="Above Suspicion"></option>
+               <option value="Anatomy of a Murder"></option>
+               <option value="Alien"></option>
+               <option value="Argo"></option>
+               <option value="Cinderella"></option>
+               <option value="After Alice"></option>
+               <option value="Air Force One"></option>
+               <option value="A Nightmare on Elm Street"></option>
+               <option value="Amityville 3-D"></option>
+               <option value="A Stolen Life"></option>
+               <option value="Dial M for Murder"></option>
+               <option value="A FistFul of Dollars"></option>
+               <option value="Notorious"></option>
+               <option value="Another Day"></option>
+               <option value="A Kiss So Deadly"></option>
+               <option value="Atonement"></option>
+               <option value="Deadly Encounter"></option>
+               <option value="Titanic"></option>
+               <option value="Independence Day"></option>
+               <option value="Ghostbusters"></option>
+               <option value="Pretty Woman"></option>
+               <option value="Jurrassic Park"></option>
+               <option value="Saving private Ryan"></option>
+               <option value="The Day After Tomorrow"></option>
+               <option value="The Fujitive"></option>
+               <option value="Sonic the Hedgehog"></option>
+               <option value="There's something About Mary"></option>
+               <option value="Gone With the Wind"></option>
+               <option value="Star Wars"></option>
+               <option value="The sound of music"></option>
+               <option value="The Ten Commandments"></option>
+               <option value="Jaws"></option>
+               <option value="Doctor Zhivago"></option>
+               <option value="The Exorcist"></option>
+               <option value="Snow white and the Seven Dwarfs"></option>
+               <option value="101 Dalmatian"></option>
+               <option value="Ben-Hur"></option>
+               <option value="Avatar"></option>
+               <option value="The Lion King"></option>
+               <option value="The Sting"></option>
+               <option value="Raiders of the Lost Ark"></option>
+               <option value="Fantasia"></option>
+               <option value="The Godfather"></option>
+               <option value="Mary Poppins"></option>
+               <option value="Black Panther"></option>
+            </datalist>
+
+            <!--first filled aspect after search: poster-->
+
+            <div class="poster" id="poster"></div>
+            </div>
+   
+        <!--local storage based on history of past searches-->
+        <div class="col-lg-5 col-md-12 reviews-section">
+            <p style="color:white;">This site is providing you information about movies. The poster, plot and critics are given so that you will have idea about a certain movie if you're planning to watch whenever you want. Enjoy the searching! </p>
+            <p style="color: aliceblue;">Looking for a good movies?  <a href="https://www.hotstar.com/in/movies"> Checkout here! </a></p>
+            <!--second filled aspect after search: plot-->
+            <h3>Plot</h3>
+            <textarea id="plot"></textarea>
+            <!--third filled aspect after search: critic rating-->
+            <h3>Critic Rating</h3>
+            <article id="critic-ratings"></article>
+        </div>
+        
+        <div class="col-lg-3 col-md-5 " id="dropdown"></div>
+    </main>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+                
+             <div class="modal-header">
+              <h4 class="modal-title">Trailers Soon</h4>
+              <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body" id="myVideo">
+            <a href="https://www.youtube.com/embed/1BBZY2kX1tY">Trailers This Week</a> /
+            <a href="https://www.youtube.com/embed/KgAiCV9WKbQ">The Last legion</a> /
+            <a href="https://www.youtube.com/embed/Q3oukN2EIDM">The Best Upcoming Movies (New Trailers)</a> /
+            <a href="https://www.youtube.com/embed/cG0feucWQ1c">New Trailers This Week</a> /
+            <a href= "https://www.youtube.com/embed/R8SZtNhL_W4">Movieclips Trailer</a> /
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Gc-2orMEMPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+             <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+        
+    <!--footer-->
+    <footer class="flex-row justify-space-between">
+        <div>Group-5-Collaborative-Creation <i class="fas fa-heart" style="color: red;"></i></div>
+          <div>@Bootcamp UC Berkeley Extension 2021</div>
+    </footer>
+        
+    <!-- links for the script-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
